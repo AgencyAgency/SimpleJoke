@@ -9,5 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface Joker : NSObject
-
+- (NSString *)currentQuestion;
+- (NSString *)currentAnswer;
+- (void)refreshJoke;
 @end
