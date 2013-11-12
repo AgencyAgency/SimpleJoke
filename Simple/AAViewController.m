@@ -42,6 +42,7 @@
     self.questionLabel.text = [self.questions objectAtIndex:self.currentIndex];
     self.answerLabel.text = [self.answers objectAtIndex:self.currentIndex];
     self.answerLabel.alpha = 0.0;
+    self.currentIndex = (self.currentIndex + 1) % [self.questions count];
 }
 
 - (void)viewDidLoad
@@ -60,7 +61,6 @@
                            forState:UIControlStateNormal];
     } else {
         // Load another joke.
-        self.currentIndex = (self.currentIndex + 1) % [self.questions count];
         [self showNextJoke];
         [self.tellMeButton setTitle:@"Tell me."
                            forState:UIControlStateNormal];
