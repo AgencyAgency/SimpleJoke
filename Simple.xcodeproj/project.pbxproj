@@ -21,7 +21,6 @@
 		CFE08CE81831C64A002DFCF2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFE08CCA1831C64A002DFCF2 /* UIKit.framework */; };
 		CFE08CF01831C64A002DFCF2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CFE08CEE1831C64A002DFCF2 /* InfoPlist.strings */; };
 		CFE08CF21831C64A002DFCF2 /* SimpleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE08CF11831C64A002DFCF2 /* SimpleTests.m */; };
-		CFE08CFD1831C69A002DFCF2 /* Joker.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE08CFC1831C69A002DFCF2 /* Joker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,8 +53,6 @@
 		CFE08CED1831C64A002DFCF2 /* SimpleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleTests-Info.plist"; sourceTree = "<group>"; };
 		CFE08CEF1831C64A002DFCF2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CFE08CF11831C64A002DFCF2 /* SimpleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleTests.m; sourceTree = "<group>"; };
-		CFE08CFB1831C69A002DFCF2 /* Joker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Joker.h; sourceTree = "<group>"; };
-		CFE08CFC1831C69A002DFCF2 /* Joker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Joker.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,8 +117,6 @@
 				CFE08CD81831C64A002DFCF2 /* Main.storyboard */,
 				CFE08CDB1831C64A002DFCF2 /* AAViewController.h */,
 				CFE08CDC1831C64A002DFCF2 /* AAViewController.m */,
-				CFE08CFB1831C69A002DFCF2 /* Joker.h */,
-				CFE08CFC1831C69A002DFCF2 /* Joker.m */,
 				CFE08CDE1831C64A002DFCF2 /* Images.xcassets */,
 				CFE08CCD1831C64A002DFCF2 /* Supporting Files */,
 			);
@@ -256,7 +251,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFE08CD71831C64A002DFCF2 /* AAAppDelegate.m in Sources */,
-				CFE08CFD1831C69A002DFCF2 /* Joker.m in Sources */,
 				CFE08CDD1831C64A002DFCF2 /* AAViewController.m in Sources */,
 				CFE08CD31831C64A002DFCF2 /* main.m in Sources */,
 			);

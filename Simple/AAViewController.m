@@ -7,10 +7,8 @@
 //
 
 #import "AAViewController.h"
-#import "Joker.h"
 
 @interface AAViewController ()
-@property (nonatomic, strong) Joker *joker;
 @property (weak, nonatomic) IBOutlet UILabel *questionLabel;
 @property (weak, nonatomic) IBOutlet UILabel *answerLabel;
 @end
