@@ -16,15 +16,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Why did the chicken cross the road?" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="eJ2-2D-3Zn">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="DEMO: Why did the chicken cross the road?" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="eJ2-2D-3Zn">
                                 <rect key="frame" x="20" y="49" width="280" height="78"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="scq-C7-NrA">
-                                <rect key="frame" x="20" y="160" width="280" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="scq-C7-NrA">
+                                <rect key="frame" x="20" y="518" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Tell me.">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -33,8 +33,8 @@
                                     <action selector="tellMePressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="WJo-bz-bDG"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="To get to the other side." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="Xf3-mK-3IK">
-                                <rect key="frame" x="20" y="252" width="280" height="78"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="DEMO: To get to the other side." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="Xf3-mK-3IK">
+                                <rect key="frame" x="20" y="135" width="280" height="78"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -42,10 +42,20 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="scq-C7-NrA" firstAttribute="trailing" secondItem="eJ2-2D-3Zn" secondAttribute="trailing" id="Ri8-Bx-IMV"/>
+                            <constraint firstItem="scq-C7-NrA" firstAttribute="leading" secondItem="eJ2-2D-3Zn" secondAttribute="leading" id="Xut-Bb-CN0"/>
+                            <constraint firstAttribute="bottom" secondItem="scq-C7-NrA" secondAttribute="bottom" constant="20" symbolic="YES" id="cim-Zb-sqe"/>
+                            <constraint firstItem="scq-C7-NrA" firstAttribute="trailing" secondItem="Xf3-mK-3IK" secondAttribute="trailing" id="dz9-Oa-Ihz"/>
+                            <constraint firstAttribute="trailing" secondItem="scq-C7-NrA" secondAttribute="trailing" constant="20" symbolic="YES" id="pMY-Vz-CHJ"/>
+                            <constraint firstItem="scq-C7-NrA" firstAttribute="leading" secondItem="Xf3-mK-3IK" secondAttribute="leading" id="vOZ-Vs-zF9"/>
+                            <constraint firstItem="scq-C7-NrA" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" symbolic="YES" id="xWJ-qt-sAO"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="answerLabel" destination="Xf3-mK-3IK" id="gsq-pV-4OV"/>
                         <outlet property="questionLabel" destination="eJ2-2D-3Zn" id="cPH-Rs-YpC"/>
+                        <outlet property="tellMeButton" destination="scq-C7-NrA" id="0ep-Qs-5Wm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
