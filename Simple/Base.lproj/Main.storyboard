@@ -16,9 +16,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="DEMO: Why did the chicken cross the road?" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="eJ2-2D-3Zn">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DEMO: Why did the chicken cross the road?" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="eJ2-2D-3Zn">
                                 <rect key="frame" x="20" y="49" width="280" height="78"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="78" id="q9J-BT-pqp"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="24"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -33,9 +36,12 @@
                                     <action selector="tellMePressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="WJo-bz-bDG"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="DEMO: To get to the other side." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="Xf3-mK-3IK">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DEMO: To get to the other side." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="Xf3-mK-3IK">
                                 <rect key="frame" x="20" y="135" width="280" height="78"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="78" id="Y8i-4N-u4v"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-MediumItalic" family="Helvetica Neue" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -43,12 +49,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Xf3-mK-3IK" firstAttribute="top" secondItem="eJ2-2D-3Zn" secondAttribute="bottom" constant="8" symbolic="YES" id="Ao8-nZ-Yzj"/>
+                            <constraint firstItem="Xf3-mK-3IK" firstAttribute="trailing" secondItem="eJ2-2D-3Zn" secondAttribute="trailing" id="LED-SE-UuR"/>
                             <constraint firstItem="scq-C7-NrA" firstAttribute="trailing" secondItem="eJ2-2D-3Zn" secondAttribute="trailing" id="Ri8-Bx-IMV"/>
+                            <constraint firstItem="eJ2-2D-3Zn" firstAttribute="top" secondItem="lXN-RK-GFu" secondAttribute="bottom" constant="29" id="SYS-Rx-AEg"/>
+                            <constraint firstItem="Xf3-mK-3IK" firstAttribute="leading" secondItem="eJ2-2D-3Zn" secondAttribute="leading" id="XZG-md-juC"/>
                             <constraint firstItem="scq-C7-NrA" firstAttribute="leading" secondItem="eJ2-2D-3Zn" secondAttribute="leading" id="Xut-Bb-CN0"/>
                             <constraint firstAttribute="bottom" secondItem="scq-C7-NrA" secondAttribute="bottom" constant="20" symbolic="YES" id="cim-Zb-sqe"/>
-                            <constraint firstItem="scq-C7-NrA" firstAttribute="trailing" secondItem="Xf3-mK-3IK" secondAttribute="trailing" id="dz9-Oa-Ihz"/>
                             <constraint firstAttribute="trailing" secondItem="scq-C7-NrA" secondAttribute="trailing" constant="20" symbolic="YES" id="pMY-Vz-CHJ"/>
-                            <constraint firstItem="scq-C7-NrA" firstAttribute="leading" secondItem="Xf3-mK-3IK" secondAttribute="leading" id="vOZ-Vs-zF9"/>
                             <constraint firstItem="scq-C7-NrA" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" symbolic="YES" id="xWJ-qt-sAO"/>
                         </constraints>
                     </view>
